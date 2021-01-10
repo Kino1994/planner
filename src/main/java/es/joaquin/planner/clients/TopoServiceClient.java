@@ -16,7 +16,7 @@ public class TopoServiceClient {
 	@Autowired
 	private RestTemplate restTemplate;
 	
-	@Value("${topo.url}")
+	@Value("${toposervice.url}")
     private String url;
 	
 	public CompletableFuture<String> getLandscape(String city) {
